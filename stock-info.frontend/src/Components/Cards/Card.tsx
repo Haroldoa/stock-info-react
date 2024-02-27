@@ -1,8 +1,12 @@
 import React from "react";
 
-type Props = {};
+interface Props {
+  companyName: string;
+  ticker: string;
+  price: number;
+};
 
-export const Card = (props: Props) => {
+export const Card = ({companyName, ticker, price}: Props) => {
   return (
     <div className="mt-6 w-96 rounded max-w-sm shadow-lg">
       <img
@@ -10,8 +14,8 @@ export const Card = (props: Props) => {
         alt="Playing cards"
       />
       <div className="details">
-        <h2>AAPL</h2>
-        <p>$110</p>
+        <h2>{companyName} ({ticker})</h2>
+        <p>${price}</p>
       </div>
       <p className="description">Apple Inc.</p>
     </div>
