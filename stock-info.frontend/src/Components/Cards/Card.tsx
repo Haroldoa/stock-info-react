@@ -17,3 +17,4 @@ export const Card = (props: Props) => {
     </div>
   );
 }
+export default Card;
