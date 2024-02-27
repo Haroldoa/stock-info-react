@@ -4,7 +4,7 @@ type Props = {};
 
 export const Card = (props: Props) => {
   return (
-    <div className="mt-6 w-96 rounded max-w-sm">
+    <div className="mt-6 w-96 rounded max-w-sm shadow-lg">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
         alt="Playing cards"
